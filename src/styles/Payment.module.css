@@ -1,0 +1,136 @@
+/* styles/Payment.module.css */
+
+.bodyWrapper {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #232f3e;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: rgb(255, 132, 0);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navLink {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.navLink:hover {
+  border-bottom: 2px solid #FF9900;
+}
+
+.backButtonContainer {
+  padding: 20px 40px 0;
+  background-color: #f9f9f9;
+}
+
+.backButton {
+  color: white;
+  font-size: 16px;
+  background-color: #ff8400;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.formContainer {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputField {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.submitButton {
+  background-color: rgb(255, 132, 0);
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.qrCodeSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.qrBox {
+  width: 250px;
+  height: 250px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qrBox {
+    width: 200px;
+    height: 200px;
+  }
+}

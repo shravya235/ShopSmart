@@ -1,0 +1,53 @@
+/* Contact.module.css */
+.contactForm {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  .contactForm h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contactForm form div {
+    margin-bottom: 15px;
+  }
+  
+  .contactForm form label {
+    font-weight: bold;
+  }
+  
+  .contactForm form input,
+  .contactForm form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contactForm form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff8a00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contactForm form button:hover {
+    background-color: #e67e00;
+  }
+  
+  .contactForm p {
+    font-size: 14px;
+    text-align: center;
+  }
+  
