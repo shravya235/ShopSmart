@@ -102,6 +102,6 @@ const CustomerCare = () => {
       </div>
     </>
   );
-};
+}
 
 export default CustomerCare;

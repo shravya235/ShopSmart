@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../styles/Return.module.css'; // Importing the CSS module for styling
+import styles from '../styles/Return.module.css'; // Correctly importing the CSS
 
 export default function ReturnAndRefund() {
   return (
@@ -8,7 +8,6 @@ export default function ReturnAndRefund() {
         <title>ShopSmart - Return & Refund Policy</title>
         <meta name="description" content="Return and Refund Policy of ShopSmart, outlining the terms and process for returns and refunds." />
       </Head>
-
 
       <div className={styles.policyContent}>
         <h1>Return & Refund Policy</h1>
@@ -32,15 +31,13 @@ export default function ReturnAndRefund() {
         </p>
 
         <h2>4. Non-returnable Items</h2>
-        <p>
-          Some items are non-returnable, including:
-          <ul>
-            <li>Personalized or custom-made items</li>
-            <li>Opened software or digital products</li>
-            <li>Items marked as "Final Sale"</li>
-          </ul>
+        <p>Some items are non-returnable, including:</p>
+        <ul>
+          <li>Personalized or custom-made items</li>
+          <li>Opened software or digital products</li>
+          <li>Items marked as "Final Sale"</li>
+        </ul>
 
-        </p>
         <h2>5. Exchange Policy</h2>
         <p>
           We currently do not offer direct exchanges. If you wish to exchange an item, you will need to return the original item for a refund and place a new order for the desired product.

@@ -2,7 +2,7 @@
 import '../styles/globals.css';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import Header from '../components/header';
+import Header from '../components/Header';
 import Footer from '../components/footer';
 
 function MyApp({ Component, pageProps }) {
@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
   const closeModal = () => setIsModalOpen(false);
 
   // Pages where Header and Footer should NOT appear
-  const noLayoutPages =  [ '/' , '/login', '/signup', '/payment', '/cart', '/contact', '/about', '/customer-service', '/terms', '/privacy', '/returns', '/search'];
+  const noLayoutPages =  [ '/' , '/login', '/signup', '/payment', '/cart'];
 
   const isNoLayout = noLayoutPages.includes(router.pathname);
   const isHomePage = router.pathname === '/';
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
 
       <Component {...pageProps} />
 
-      {!isNoLayout && <Footer />}
+      <Footer />
     </>
   );
 }

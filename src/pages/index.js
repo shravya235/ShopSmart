@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
 import ProductCard from '../components/ProductCard';
 import MotionBanner from '../components/MotionBanner';
 
@@ -35,7 +33,17 @@ export default function Home() {
         <title>ShopSmart - Home</title>
       </Head>
 
-      <Header onSearch={handleSearch} />
+      <header>   
+    <div className="logo">
+      <h1>ShopSmart</h1>
+    </div>
+    <nav>
+      <a href="/cart">Cart</a>
+      <a href="/about">About Us</a>
+      <a href="/contact">Contact Us</a>
+      <a href="/login">Login</a>
+    </nav>
+  </header>
 
       <MotionBanner />
 
@@ -48,7 +56,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer />
+      {/* Footer is also automatically coming from _app.js */}
     </div>
   );
 }

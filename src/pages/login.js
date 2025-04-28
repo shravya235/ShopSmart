@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from '../styles/Login.module.css';
 import Footer from '@/components/footer';
-import Header from '@/components/header';
+import Header from '@/components/Header';
 
 const Login = () => {
   const [email, setEmail] = useState('');

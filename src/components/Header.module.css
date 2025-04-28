@@ -1,10 +1,8 @@
-/* src/components/Header.module.css */
-
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  justify-content: space-between;
+  padding: 10px 40px;
   background-color: #232f3e;
   flex-wrap: wrap;
 }
@@ -18,71 +16,31 @@
 .nav {
   display: flex;
   gap: 20px;
-  align-items: center;
 }
 
 .nav a {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 8px;
 }
 
 .nav a:hover {
   border-bottom: 2px solid #FF9900;
 }
 
-.searchContainer {
+.searchBar {
+  flex: 1 1 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-top: 10px;
-  width: 100%;
 }
 
-.searchBar {
+.searchBar input {
+  width: 100%;
+  max-width: 500px;
   padding: 10px;
   font-size: 16px;
-  width: 100%;
-  max-width: 300px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.searchBar:focus {
-  outline: none;
-  border: 2px solid #FF9900;
-}
-
-.searchButton {
-  padding: 10px 15px;
-  font-size: 16px;
-  background-color: #FF9900;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.searchButton:hover {
-  background-color: #e67e00;
-}
-
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .searchContainer {
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  .searchBar {
-    width: 100%;
-    max-width: 400px; /* Adjust the width of the search bar on mobile */
-  }
 }
