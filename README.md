@@ -41,5 +41,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
 =======
 # ShopSmart
-ShopSmart is an e-commerce web application built with Next.js, providing a seamless shopping experience with features like product browsing, cart management, secure checkout, and user authentication. It is designed to be responsive and user-friendly, offering online shopping.
+ShopSmart – an e-commerce website. I developed it using next.js for the frontend and integrated localStorage to manage cart functionalities. I designed a fully responsive layout, implemented product pages, login/signup authentication, and created a payment page UI matching real-world platforms. I focused heavily on clean code, performance optimization, and user experience.
+This next.js project is built by Shravya R
 >>>>>>> 23355287514e9d02eee8577e4990b96c1d5179a7
